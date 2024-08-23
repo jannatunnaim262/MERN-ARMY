@@ -129,3 +129,108 @@ function addNumber(a,b){
 }
 console.log(addNumber(5,10));
 
+
+// 3 Array
+let fruits = ["Apple","Banana","Mango","Strawberry"];
+console.log(fruits);
+console.log(typeof fruits);
+
+// ()  Parenthesis
+// {}  Carlibres
+// []  Square Brackets
+
+
+// 4 Date
+// * Represents date and time
+let today = new Date();
+console.log(today);
+console.log(typeof today);
+
+// 5 RegExp (Regular Expression)
+// * Represents Regular Expression used for pattern matching within strings
+
+let regex = /[a-z]/g;
+console.log(regex);
+console.log(typeof regex);
+
+// 6 Map
+
+let myMap = new Map();
+myMap.set("name", "John Doe");
+myMap.set("age", 30);
+myMap.set("Country", "Bangladesh")
+console.log(myMap);
+console.log(typeof myMap);
+
+
+// 7 Set
+// * Set is a collection of a unique values. like the array, but values cannot be duplicate
+
+let mySet = new Set();
+mySet.add("Apple");
+mySet.add("Banana"); // You cants store same data twice
+mySet.add("mango");
+mySet.add("Jackfruits");
+console.log(mySet);
+console.log(typeof mySet);
+
+
+// Weakset
+
+let weakMap = new WeakMap();
+let obj = {name: "John Doe"};
+weakMap.set(obj, "This is John Doe");
+console.log(weakMap);
+console.log(typeof weakMap);
+
+
+// Symbole Iterator
+// * Property of an object that returns an iterator for the object
+
+let myArray = ["apple","mango","orange"];
+let iterator = myArray[Symbol.iterator]();
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+
+
+// Reverse Letter
+
+let name2 = "I am Naim";
+
+let splitname2 = name2.split("");
+console.log(splitname2);
+
+let reversarr = splitname2.reverse();
+console.log(reversarr);
+
+let reverseJoin = reversarr.join("")
+console.log(reverseJoin);
+
+
+let name3 = "I am Naim";
+
+let splitname3 = name3.split(" ");
+console.log(splitname3);
+
+let reversarrr = splitname3.reverse();
+console.log(reversarr);
+
+let reverseJoinn = reversarrr.join(" ")
+console.log(reverseJoinn);
+
+
+// Special Case
+// 1 NaN -- Not a Number
+
+let a  = 10;
+let b = "20";
+let c = a + b;
+console.log(c);
+console.log(typeof c);
+console.log(0/0); // NaN
+console.log(undefined + 10);
+console.log(parseInt("dsrhdfgfd"));
+console.log(Number("46565"));
+console.log(isNaN("hgdhgd"));
