@@ -93,4 +93,3 @@ var array = [10,20,30];
 for(var value of array){
   console.log(value);
 }
-
